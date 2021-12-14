@@ -3,7 +3,7 @@ const router = Router();
 
 const { registro, ingreso, usuarios, enviar, consultaTiempoReal, consultaSemanal, configuracion } = require('../controller/index.controller')
 
-router.get('/registro/:user&:pass',registro);
+router.get('/registro/:user&:pass&:temp',registro);
 router.get('/ingreso/:user&:pass',ingreso);
 router.get('/usuarios',usuarios);
 router.get('/envioDatos/:userid&:dato&:temperatura',enviar);
